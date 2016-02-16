@@ -29,7 +29,7 @@
 // varible declarations
 var button = document.getElementById("buildIt");
 var resetButton = document.getElementById("resetIt");
-console.log("in the JS file check button value", button );
+// console.log("in the JS file check button value", button );
 
 //function to capture the input and build tree object for resuability
 //and pass into imput checking function
@@ -38,7 +38,7 @@ var pineTree = {
     pineHeight: document.getElementById("heightValue").value, 
     pineStyle: document.getElementById("charItem").value
     }; 
-    console.log("pinetreeobject",pineTree);
+    // console.log("pinetreeobject",pineTree);
     checkInput(pineTree);
 }
 //function for checking inputs entered  have values in forms & alert 
@@ -48,8 +48,8 @@ function checkInput(checkTree) {
   if ((isNaN(checkTree.pineHeight) === true) || (checkTree.pineStyle === "")) {
     alert("Enter a number and any character other than a space or blank")
   } else {
-    console.log("checkInput Height",checkTree.pineHeight);
-    console.log("checkInput Character",checkTree.pineStyle);     
+    // console.log("checkInput Height",checkTree.pineHeight);
+    // console.log("checkInput Character",checkTree.pineStyle);     
     pineORama(checkTree);
   }
 }
@@ -60,9 +60,9 @@ function pineORama(buildTree) {
   //define the width of the tree and create the string to hold the line items
   var pineWidth = (2 * buildTree.pineHeight) - 1;
   var pineLine = "";
-  console.log("pine width base", pineWidth); 
-  console.log("height in pineOrama", buildTree.pineHeight );
-  console.log("character in pineOrama", buildTree.pineStyle);
+  // console.log("pine width base", pineWidth); 
+  // console.log("height in pineOrama", buildTree.pineHeight );
+  // console.log("character in pineOrama", buildTree.pineStyle);
   //loop to count up to the height of tree 
   //and clear the string each pass
   for (i = 1; i <= buildTree.pineHeight; i++) {
